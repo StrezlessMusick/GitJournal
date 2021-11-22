@@ -1,0 +1,431 @@
+settings:
+  ok: Ok
+  cancel: Cancel
+  title: Settings
+  author:
+    label: Full Name
+    hint: Who should author the changes?
+    validator: Please enter a name
+  email:
+    label: Email
+    hint: Email Address
+    validator:
+      empty: Please enter an email
+      invalid: Please enter a valid email
+  display:
+    title: Display Settings
+    darkTheme: Dark Theme
+    homeScreen: Home Screen
+  gitAuthor: Git Author Settings
+  versionInfo: Version Info
+  analytics: Analytics
+  crashReports: Collect Anonymous Crash Reports
+  usageStats: Collect Anonymous Usage Statistics
+  debug:
+    title: Debug App
+    subtitle: Look under the hood
+    levels:
+      title: Select Level
+      error: Error
+      warning: warning
+      info: Info
+      debug: Debug
+      verbose: Verbose
+  images:
+    title: Image Settings
+    subtitle: Configure how Images are stored
+    imageLocation: Image Location
+    currentFolder: Same Folder as Note
+    customFolder: Custom Folder
+  gitRemote:
+    changeHost:
+      title: Reconfigure Git Host?
+      subtitle: Notes which have not been synced will be lost
+      ok: Ok
+      cancel: Cancel
+    title: Git Remote Settings
+    subtitle: Configure where your notes are synced
+    host: Git Host
+  noteMetaData:
+    title: Note Metadata Settings
+    subtitle: Configure how the Note Metadata is saved
+    text: Every note has some metadata which is stored in a YAML Header as follows -
+    enableHeader: Enable YAML Header
+    modified: Modified Field
+    created: Created Field
+    tags: Tags Field
+    example:
+      title: Example Title
+    titleMetaData:
+      title: Title
+      fromH1: Text Header 1
+      fromYaml: From YAML 'title'
+    exampleTitle: Pigeons
+    exampleBody: I think they might be evil. Even more evil than penguins.
+    exampleTag1: Birds
+    exampleTag2: Evil
+    customMetaData:
+      title: Custom MetaData
+      invalid: Invalid YAML
+  privacy: Privacy Policy
+  terms: Terms and Conditions
+  experimental:
+    title: Experimental Features
+    subtitle: Try out features in Development
+    backlinks: Show Backlinks in Markdown Preview
+    fs: Show File System
+    markdownToolbar: Show Markdown Toolbar in Editor
+    graphView: Graph View
+    accounts: Platform Independent Accounts
+  editors:
+    title: Editor Settings
+    subtitle: Configure how different editors work
+    defaultEditor: Default Editor
+    defaultState: Default State
+    markdownEditor: Markdown Editor
+    journalEditor: Journal Editor
+    defaultFolder: Default Folder
+    checklistEditor: Checklist Editor
+    rawEditor: Raw Editor
+    choose: Choose Editor
+  sortingField:
+    modified: Last Modified
+    created: Created
+    filename: File Name
+    title: Title
+  sortingOrder:
+    asc: Ascending
+    desc: Descending
+  sortingMode:
+    field: Field
+    order: Order
+  remoteSync:
+    auto: Automatic
+    manual: Manual
+  tags:
+    title: Tags Settings
+    subtitle: Configure how inline tags are parsed
+    enable: Parse Inline Tags
+    prefixes: Inline Tags Prefixes
+  misc:
+    title: Misc Settings
+    swipe: Swipe to Delete Note
+    listView: List View
+    confirmDelete: Show a Popup to Confirm Deletes
+  NoteFileNameFormat:
+    iso8601WithTimeZone: ISO8601 With TimeZone
+    iso8601: ISO8601
+    iso8601WithoutColon: ISO8601 without Colons
+    title: Title
+    uuid: Uuid V4
+    simmple: yyyy-mm-dd-hh-mm-ss
+    zettelkasten: yyyymmddhhmmss
+  HomeScreen:
+    allNotes: All Notes
+    allFolders: All Folders
+  EditorDefaultView:
+    edit: Edit
+    view: View
+    lastUsed: Last Used
+  ssh:
+    syncFreq: Sync Frequency
+    reset: Reset Git Host
+  note:
+    title: Note Settings
+    defaultFolder: Default Folder for new notes
+    fileName: Filename
+  storage:
+    title: Storage
+    fileName: Filename
+    external: Store Repo Externally
+    icloud: Store in iCloud
+    repoLocation: Repo Location
+  drawer:
+    title: Sidebar Settings
+  bottomMenuBar:
+    title: Bottom Menu Bar
+    subtitle: Configure its appearance and behaviour
+    enable: Enable Buttom Menu Bar
+
+editors:
+  checklist:
+    add: Add Item
+  common:
+    defaultBodyHint: Write here
+    defaultTitleHint: Title
+    discard: Discard Changes
+    share: Share Note
+    takePhoto: Take Photo
+    addImage: Add Image from Gallery
+    editFileName: Edit File Name
+    tags: Edit Tags
+    zen:
+      enable: Enable Zen Mode
+      disable: Disable Zen Mode
+    saveNoteFailed:
+      title: Failed to Save Note
+      message: We're sorry, but we cannot seem to save the Note. It has been copied to the clipboard to avoid data loss.
+pro: Pro
+actions:
+  newNote: New Note
+  newJournal: New Journal Entry
+  newChecklist: New Checklist
+screens:
+  home:
+    allNotes: All Notes
+  folders:
+    title: Folders
+    selected: Folder Selected
+    dialog:
+      title: Create new Folder
+      create: Create
+      discard: Discard
+    errorDialog:
+      title: Error
+      deleteContent: Cannot delete a Folder which contains notes
+      renameContent: Cannot rename Root Folder
+      ok: Ok
+    actions:
+      rename: Rename Folder
+      subFolder: Create Sub-Folder
+      delete: Delete Folder
+      decoration: Folder Name
+      empty: Please enter a name
+  tags:
+    title: Tags
+    empty: No Tags Found
+  filesystem:
+    ignoredFile:
+      title: File Ignored
+      ok: Ok
+      rename: Rename
+    rename:
+      decoration: File Name
+      title: Rename
+  folder_view:
+    empty: Let's add some notes?
+
+OnBoarding:
+  Skip: Skip
+  Next: Next
+  getStarted: Get Started
+  subtitle: 'An Open Source Note Taking App
+built on top of Git'
+  page2: 'Your Notes are stored in a
+standard Markdown + YAML\nHeader format'
+  page3: 'Sync your Local Git Repo
+with any provider'
+
+widgets:
+  rename:
+    yes: Rename
+    no: Cancel
+    validator:
+      empty: Please enter a name
+      exists: Already Exists
+      contains: Cannot contain /
+  backlinks:
+    title:
+      zero: ""
+      one: "{} Note links to this Note"
+      many: "{} Notes link to this Note"
+      two: "{} Notes link to this Note"
+      few: "{} Notes link to this Note"
+      other: "{} Notes link to this Note"
+  SortingOrderSelector:
+    title: Sorting Criteria
+  PurchaseButton:
+    text: Purchase for {price}
+    fail: Failed to Load
+    failSend: Failed to send purchase request
+    failPurchase: Failed to Purchase - {}
+  FolderView:
+    noteDeleted: Note Deleted
+    undo: Undo
+    syncError: Sync Error {}
+    headerOptions:
+      heading: Header Options
+      auto: Auto Generated Title
+      titleFileName: Title or FileName
+      fileName: FileName
+      summary: Show Summary
+      customize: Customize View
+    views:
+      standard: Standard View
+      journal: Journal View
+      grid: Grid View
+      card: Card View
+      select: Select View
+    sortingOptions: Sorting Options
+    viewOptions: View Options
+    searchFailed: No Search Results Found
+  NoteDeleteDialog:
+    title: Do you want to delete this note?
+    yes: Yes
+    no: No
+  NoteEditor:
+    renameFile: Rename File
+    fileName: Filename
+  SyncButton:
+    error: Sync Error {}
+  PurchaseWidget:
+    failed: Purchase Failed
+  NoteViewer:
+    linkNotFound: Link '{}' not found
+    linkInvalid: Link '{}' is invalid.
+  FolderSelectionDialog:
+    title: Select a Folder
+
+rootFolder: Root Folder
+ignoredFiles:
+  dot: Starts with a .
+  ext: Doesn't end with one of the following -
+drawer:
+  setup: Setup Git Host
+  pro: Unlock Pro Version
+  all: All Notes
+  folders: Folders
+  fs: File System
+  graph: Graph View
+  tags: Tags
+  share: Share App
+  rate: Rate Us
+  feedback: Feedback
+  bug: Bug Report
+setup:
+  autoconfigure:
+    title: We need permission to perform the following steps
+    step1: 1. List your existing repos or create a new repo
+    step2: 2. Generate an SSH Key on this device
+    step3: 3. Add the key as a deploy key with write access to the repository
+    warning: This will require granting GitJournal access to all private and public repos. If you're not comfortable with that please go back and chose the manual setup option.
+    authorize: Authorize GitJournal
+    waitPerm: Waiting for Permissions ...
+    readUser: Reading User Info
+  repoSelector:
+    title: Select or Create a Repository
+    hint: Type to Search or Create a Repo
+    create: Create Private Repo {}
+  cloneUrl:
+    enter: Enter the Git Clone URL
+    validator:
+      empty: Please enter some text
+      invalid: Invalid Input
+      onlySsh: Only SSH urls are currently accepted
+    manual:
+      title: Please create a new git repository -
+      step1: 1. Go to the website, create a repo and copy its git clone URL
+      step2: 2. Enter the Git clone URL
+      button: Open Create New Repo Webpage
+  next: Next
+  fail: Failed
+  keyEditors:
+    public: Invalid Public Key - Doesn't start with ssh-rsa
+    private: Invalid Private Key
+    load: Load from File
+  sshKey:
+    generate: Generating SSH Key
+    title: In order to access this repository, this public key must be copied as a deploy key
+    step1: 1. Copy the key
+    step2a: 2. Open webpage, and paste the deploy key. Make sure it is given Write Access.
+    step2b: 2. Give this SSH Key access to the git repo. (You need to figure it out yourself)
+    step3: 3. Try Cloning ..
+    copy: Copy Key
+    copied: Public Key copied to Clipboard
+    regenerate: Regenerate Key
+    openDeploy: Open Deploy Key Webpage
+    clone: Clone Repo
+    addDeploy: Adding as a Deploy Key
+    save: Save
+  sshKeyChoice:
+    title: We need SSH keys to authenticate -
+    generate: Generate new keys
+    custom: Provide Custom SSH Keys
+  sshKeyUserProvided:
+    public: Public Key -
+    private: Private Key -
+    password: Password
+  cloning: Cloning ...
+  host:
+    title: Select a Git Hosting Provider -
+    custom: Custom
+  autoConfigure:
+    title: How do you want to do this?
+    automatic: Setup Automatically
+    manual: Let me do it manually
+
+feature:
+  darkMode: Dark Mode
+  rawEditor: Raw Editor
+  folderSupport: Folder Support
+  fileNameCustomize: Customize Note FileName
+  noteMetaDataCustomize:
+    title: Customize Note Metadata
+    subtitle: Allows GitJournal to be used with static website generators
+  autoMergeConflicts: Automation Merge Conflict Resolution
+  noteSorting: Configurable Note Sorting
+  gitPushFreq: Configurable Git Sync Frequency
+  checklistEditor: Checklist Editor
+  journalEditor: Journal Editor
+  diffViews: Different Folder Views - Journal, Grid, Standard
+  imageSupport: Image Support
+  tags: Note Tags
+  appShortcuts: App Shortcuts
+  createRepo: Create Custom Repos from within App
+  backlinks: Note Backlinks Support
+  txtFiles: Txt File Support
+  wikiLinks: Wiki Style Links Support
+  metaDataTitle: Customize Title MetaData
+  journalEditorDefaultFolder: Customize Default Folder for Journal Editor
+  yamlModifiedKey: Customize the YAML modified key
+  yamlCreatedKey: Customize the YAML created key
+  yamlTagsKey: Customize the YAML tags key
+  disableYamlHeader: Disable YAML Metadata Header
+  customizeHomeScreen: Customize Home Screen
+  zenMode: Zen Writing Mode
+  emojiSupport:
+    title: Emoji Support
+    subtitle: "Convert :heart: to ❤️"
+  allNotesView: Add a screen to show "All Notes"
+  basicSearch: Basic Search
+  customSSHKeys: Provide your own SSH Keys
+  customMetaData: Add Custom Metadata to new Notes
+  graphVisualization: Graph Visualization
+  mutliRepos: Multiple Git Repos
+  customThemes: Custom Themes
+  gitLog: View and Search through Git History
+  latex: Latex Support
+  mermaid: Mermaid Diagram Support
+  encryptedHosting: Encrypted Git Hosting
+  desktop: Desktop App
+  markdownToolbar: Markdown Toolbar
+  localization:
+    title: Localization
+    subtitle: Allow GitJournal to be translated
+  inlineTags: Inline Tags
+  singleJournalEntry: Single Journal Entry File per day
+  configureBottomMenuBar: Configure the Bottom Menu Bar
+  customFileNamePerEditor: Custom FileName per Editor
+
+feature_timeline:
+  title: Feature Timeline
+  progress: In Progress
+  plan: Planned
+  issues: GitJournal's development is tracked on Github. Please consider voting on the issues you consider important.
+
+purchase_screen:
+  title: Pro Version
+  desc: 'GitJournal is completely open source and is the result of significant development work. It has no venture capital or corporation backing and it never will. Your support directly sustains development.
+
+
+GitJournal operates on a "pay what you want model (with a minimum)".'
+  restore: Restore Purchase
+  oneTime:
+    title: One Time Purchase
+    desc: Permanently enables all Pro features currently in GitJournal and new features added in the following 12 months.
+  monthly:
+    title: Monthly Installments
+    desc: Enables all Pro Features. After 12 months or after paying {minYearlyPurchase}, you will get all the benefits of the 'One Time Purchase'
+  thanks:
+    title: Thank You
+    subtitle: You're awesome for supporting GitJournal
